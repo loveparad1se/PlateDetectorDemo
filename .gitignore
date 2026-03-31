@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# 虚拟环境
+venv/
+env/
+.venv/
+
+# 模型文件（重要！避免上传大文件）
+*.pt
+*.pth
+*.onnx
+*.engine
+
+# 数据集和压缩包
+*.zip
+*.tar.gz
+*.rar
+dataset/
+data/
+
+# 项目输出
+uploads/
+crops/
+database.db
+*.log
+
+# 前端
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 系统文件
+.DS_Store
+Thumbs.db

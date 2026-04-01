@@ -61,8 +61,9 @@ def car_detect(file, save_path='./uploads/', save_crop_path='./crops/'):
 
     # 调用ocr识别裁剪后的车牌
     # 修正路径分隔符兼容Linux
-    img = cv2.imread(img_crop_path)
-    result = ocr.ocr(img)
+    # img = cv2.imread(img_crop_path)
+    result = ocr.ocr(img_crop_path)
+    print(f"OCR 原始结果: {result}")
     rec_texts = []
     rec_scores = []
     if result and result[0]:
